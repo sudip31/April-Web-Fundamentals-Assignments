@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nav_Bar</title>
+    <style>
+
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        
+
+        #logo img {
+            float: left;
+            height: 64px;
+            margin: 1px 10px;
+            border-radius: 26px 5px 26px 5px;
+        }
+
+        #logo img:hover {
+            cursor: pointer;
+        }
+
+        #logo a {
+            text-decoration: none;
+            font-family: 'Square Peg';
+            float: left;
+            margin-top: 26px;
+            font-size: 25px;
+            font-weight: 700;
+            color: #d52603;
+            margin-right: 327px;
+        }
+
+        .Navbar {
+            background: linear-gradient(to left, violet, red,yellow, rgb(132, 189, 132), #1e00ff, rgb(174, 0, 255));
+            /* background-color: aqua; */
+            position: fixed;
+            width: 100%;
+            height: 59px;
+
+
+
+        }
+
+        .Navbar ul {
+            overflow: auto;
+        }
+
+        .Navbar li {
+            float: left;
+            list-style: none;
+            padding: 9px;
+            font-size: 22px;
+            margin: 6px 27px;
+        }
+
+        .Navbar li a {
+            text-decoration: none;
+            font-family: "Block Berthold";
+            color: #971217;
+            letter-spacing: 0.2px;
+
+
+        }
+
+        .Navbar li a:hover {
+            color: rgb(30, 17, 166);
+        }
+
+        .search {
+            color: rgb(15, 230, 212);
+            float: right;
+            padding: 7px 56px;
+            margin: 4px;
+            border-radius: 25px;
+            background-color: #605e73;
+            border: rgb(131, 11, 27);
+            color: #971217;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="Navbar">
+            <ul>
+                <div id="logo">
+                   <img src="https://www.pinclipart.com/picdir/middle/209-2095284_vectored-jana-logo-jana-inc-clipart.png" alt="jana">
+                    <a href="home">Jana Food world</a>
+                </div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#burger">Burger</a></li>
+                <li><a href="#pizza">Pizza</a></li>
+                <li><a href="">more</a></li>
+                <!-- <li><a href="#chicken">Chicken</a></li> -->
+                <div class="search">
+                    <input type="text" class="search" id="search" placeholder="search for more items">
+                    <!-- <input type="button" value="search"> -->
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+
+</body>
+
+</html>
