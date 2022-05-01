@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex_box</title>
+</head>
+<style>
+    body{
+        background-color: greenyellow;
+
+    }
+
+    #containor {
+        margin: 50px auto;
+        display: flex;
+        height: 500px;
+        justify-content: space-around;
+
+    }
+
+    .Box {
+        
+        background: red;
+        height: 264px;
+        width: 376px;
+        margin-top: 162px;
+        border-radius: 5px 5px 5px 5px;
+        color:blue;
+        font-size: larger;
+    }
+
+    #Child_1 {
+        padding: 0px 0px 0px 0px;
+    }
+
+    #Child_2 {
+        line-height: 250px;
+    }
+
+    #Child_3 {
+        line-height: 22;
+        padding-right: 15px;
+
+    }
+
+    #Child_3 p {
+        float: right;
+
+    }
+</style>
+
+<body>
+    <div id="containor">
+        <div id="Child_1" class="Box">
+            <p>Child_1</p>
+        </div>
+        <div id="Child_2" class="Box">
+            <p>Child_2</p>
+        </div>
+        <div id="Child_3" class="Box">
+            <p>Child_3</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
