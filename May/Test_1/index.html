@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mulish:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Product</a></li>
+          <li><a href="#product">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="container banner" id="banner">
+        <div class="image">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/82c32842787285.56072ccbf197c.png" alt="banner-img" />
+        </div>
+        <div class="content">
+          <p class="title">Hey! <span>Welcome to Jana Shoping World</span></p>
+          <p class="desc">Here you can get your Necessary Things</p>
+          <button class="btn" onclick="window.location.href = '#about';">About product</button>
+        </div>
+      </div>
+
+      <div class="container about" id="about">
+        <div class="content">
+          <p class="title">About our Product</p>
+          <p class="desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+        <div class="image">
+          <img src="https://i0.wp.com/www.gktoday.in/wp-content/uploads/2016/04/Product-in-Marketing.png?w=1140&ssl=1" alt="about-img" />
+        </div>
+      </div>
+
+      <div class="container product" id="product">
+        <div class="content">
+          <p class="title">Products</p>
+          <div class="grid-container">
+            <div class="grid-item grid-item-1">
+              <i class="fa-brands mobile"></i>
+              <a href="mobile.html">Mobiles</a>
+            </div>
+            <div class="grid-item grid-item-2">
+              <i class="fa-brands laptop"></i>
+              <a href="/Laptop.html">Laptop</a>
+            </div>
+            <div class="grid-item grid-item-3">
+              <i class="fa-brands tv"></i>
+              <a href="/tv.html">TV</a>
+            </div>
+            <div class="grid-item grid-item-4">
+              <i class="fa-brands "></i>
+              <a href="/freez.html">Freez</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container contact" id="contact">
+        <div class="image">
+          <img src="https://cdn4.iconfinder.com/data/icons/user-avatar-flat-icons/512/User_Avatar-26-512.png" alt="contact-img" />
+        </div>
+        <div class="content">
+          <p class="title">For getting Our Product in low price contact with us </p>
+          <!-- <form action="/action_page.php" class="form"> -->
+            <div class="field">
+              <label for="email" class="title">Your email id:</label><br />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                value="email@gmail.com"
+                class="input"
+              />
+            </div>
+            <div class="field">
+              <label for="lname" class="title">Message us  for querry:</label><br />
+              <input
+                type="text"
+                id="msg"
+                name="msg"
+                value="Hi! there"
+                class="input"
+              />
+            </div>
+
+            <input type="submit" value="Submit" class="btn" />
+          </form>
+        </div>
+      </div>
+        <div class="footer" id="footer">
+            <div class="footer-title">
+                <h2>Jana Shopping World</h2>
+                <div class="social-sites">
+                    <div class="footer-icons">
+                        <a href="#" class="ico">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="ico">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="ico">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <p>© <span id="year"></span>
+                            <script>
+                                var d = new Date();
+                                var n = d.getFullYear();
+                                document.getElementById("year").innerHTML = n;
+                            </script>
+                            copyright all right reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+  </body>
+</html>
