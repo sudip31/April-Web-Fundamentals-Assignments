@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Iframe Document</title>
+    <style>
+
+        .container{
+            background: linear-gradient(blue,green,yellow);
+        }
+      #menu div {
+
+        background-color: rgb(186, 88, 94);
+
+        padding: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      h1{
+          color: brown;
+          
+      }
+      .container {
+        display: flex;
+      }
+      #menu {
+        flex: 1;
+        padding: 5px;
+        border-right: 2px solid black;
+      }
+      #iframe {
+        flex: 4;
+      }
+      iframe {
+        padding: 5px;
+        width: 100%;
+        height: 100vh;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="menu">
+          <h1></h1>
+        <div>
+          <a href="MensCloth.html" target="rightPanel">Mens Cloths</a>
+        </div>
+
+        <div>
+          <a href="WCloth.html" target="Women's Cloth">Women's Cloths</a>
+        </div>
+
+      </div>
+
+      <div id="iframe">
+        <iframe name="rightPanel"> </iframe>
+      </div>
+    </div>
+  </body>
+</html>
